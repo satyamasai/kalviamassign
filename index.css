@@ -6,14 +6,33 @@
     /* position: absolute; */
     gap: 10px;
 }
+.container::before{
+    content: "DROP ANYWHERE";
+    color: rgba(255, 255, 255, 0.432);
+    text-align:end;
+    font-size: 62px;
+
+    position: absolute;
+    top: 50%;
+    left:32%;
+
+
+}
 .square{
     width: 100px;
     height: 100px;
     display: inline-block;
     background-color: red;
     /* position: absolute; */
+    border-radius: 5px;
+    
     
     
 
 
+}
+.square::before{
+    content: "Drag me!";
+    color: white;
+    padding: 10px;
 }

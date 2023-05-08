@@ -9,26 +9,18 @@
   </head>
   <body onload="move()">
     <div class="container">
+      <div id="square" class="square" style="background-color: yellow"></div>
       <div
-        ondblclick="dblclick()"
-        id="square"
-        class="square"
-        style="background-color: yellow"
-      ></div>
-      <div
-        ondblclick="dblclick()"
         id="square1"
         class="square"
         style="background-color: rgb(15, 49, 241)"
       ></div>
       <div
-        ondblclick="(e)=>dblclick(e)"
         id="square2"
         class="square"
         style="background-color: rgb(71, 235, 38)"
       ></div>
       <div
-        ondblclick="(e)=>dblclick(e)"
         id="square3"
         class="square"
         style="background-color: rgb(16, 2, 22)"
@@ -37,10 +29,6 @@
   </body>
 </html>
 <script>
-  function dblclick() {
-    alert("dblclick");
-    console.log("dblclick");
-  }
   var dragValue;
   function move() {
     var elements = document.querySelectorAll(".square");
