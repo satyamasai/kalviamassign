@@ -6,6 +6,7 @@
     /* position: absolute; */
     gap: 10px;
 }
+
 .container::before{
     content: "DROP ANYWHERE";
     color: rgba(255, 255, 255, 0.432);
@@ -25,11 +26,7 @@
     background-color: red;
     /* position: absolute; */
     border-radius: 5px;
-    
-    
-    
-
-
+cursor:move;
 }
 .square::before{
     content: "Drag me!";
